@@ -188,7 +188,7 @@ public class ConfiguredFeatures {
             new TwoLayersFeatureSize(1,0,1)).build());
 
     public static final RegistryEntry<PlacedFeature> PURPLE_OAK_CHECKED =
-            net.minecraft.world.gen.feature.PlacedFeatures.register("purple_oak_checked", CYAN_TREE,
+            net.minecraft.world.gen.feature.PlacedFeatures.register("purple_oak_checked", PURPLE_TREE,
                     PlacedFeatures.wouldSurvive(StainedTreeBlocks.PURPLE_SAPLING));
 
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> PURPLE_OAK_SPAWN =
