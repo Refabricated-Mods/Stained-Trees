@@ -13,7 +13,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "LGPL-2.1",
   "icon": "assets/stained_trees/icon.png",
 
   "environment": "*",
