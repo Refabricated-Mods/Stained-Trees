@@ -13,14 +13,13 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
-public class ConfiguredFeatures {
-
+public class STConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BLACK_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("black_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.BLACK_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> BLACK_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("black_oak_checked", BLACK_TREE,
@@ -32,10 +31,10 @@ public class ConfiguredFeatures {
                             BLACK_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BLUE_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("blue_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.BLUE_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> BLUE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("blue_oak_checked", BLUE_TREE,
@@ -47,10 +46,10 @@ public class ConfiguredFeatures {
                             BLUE_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BROWN_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("brown_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.BROWN_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> BROWN_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("brown_oak_checked", BROWN_TREE,
@@ -62,10 +61,10 @@ public class ConfiguredFeatures {
                             BROWN_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CYAN_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("cyan_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.CYAN_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> CYAN_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("cyan_oak_checked", CYAN_TREE,
@@ -77,10 +76,10 @@ public class ConfiguredFeatures {
                             CYAN_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> GRAY_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("gray_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.GRAY_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> GRAY_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("gray_oak_checked", GRAY_TREE,
@@ -92,10 +91,10 @@ public class ConfiguredFeatures {
                             GRAY_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> LIGHT_BLUE_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("light_blue_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.LIGHT_BLUE_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> LIGHT_BLUE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("light_blue_oak_checked", LIGHT_BLUE_TREE,
@@ -107,10 +106,10 @@ public class ConfiguredFeatures {
                             LIGHT_BLUE_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> LIGHT_GRAY_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("light_gray_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.LIGHT_GRAY_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> LIGHT_GRAY_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("light_gray_oak_checked", LIGHT_GRAY_TREE,
@@ -122,10 +121,10 @@ public class ConfiguredFeatures {
                             LIGHT_GRAY_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> LIME_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("lime_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.LIME_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> LIME_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("lime_oak_checked", LIME_TREE,
@@ -137,10 +136,10 @@ public class ConfiguredFeatures {
                             LIME_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> MAGENTA_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("magenta_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.MAGENTA_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> MAGENTA_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("magenta_oak_checked", MAGENTA_TREE,
@@ -152,10 +151,10 @@ public class ConfiguredFeatures {
                             MAGENTA_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ORANGE_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("orange_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.ORANGE_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> ORANGE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("orange_oak_checked", ORANGE_TREE,
@@ -167,10 +166,10 @@ public class ConfiguredFeatures {
                             ORANGE_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> PINK_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("pink_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.PINK_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> PINK_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("pink_oak_checked", PINK_TREE,
@@ -182,10 +181,10 @@ public class ConfiguredFeatures {
                             PINK_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> PURPLE_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("purple_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.PURPLE_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> PURPLE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("purple_oak_checked", PURPLE_TREE,
@@ -197,10 +196,10 @@ public class ConfiguredFeatures {
                             PURPLE_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> RED_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("red_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.RED_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> RED_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("red_oak_checked", RED_TREE,
@@ -212,10 +211,10 @@ public class ConfiguredFeatures {
                             RED_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> WHITE_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("white_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.WHITE_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> WHITE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("white_oak_checked", WHITE_TREE,
@@ -227,10 +226,10 @@ public class ConfiguredFeatures {
                             WHITE_OAK_CHECKED));
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> YELLOW_TREE = net.minecraft.world.gen.feature.ConfiguredFeatures.register("yellow_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG.getDefaultState()),
-            new StraightTrunkPlacer(4,2,0),
+            new StraightTrunkPlacer(4, 2, 0),
             BlockStateProvider.of(StainedTreeBlocks.YELLOW_LEAVES.getDefaultState()),
             new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-            new TwoLayersFeatureSize(1,0,1)).build());
+            new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> YELLOW_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("yellow_oak_checked", YELLOW_TREE,
