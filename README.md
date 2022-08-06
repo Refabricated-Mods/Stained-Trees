@@ -3,5 +3,3 @@ This is a fairly basic mod that adds coloured trees. Made to fill the nostalgia 
 
 - Discord: https://discord.gg/fMSnenNSXM
 - Curseforge: https://www.curseforge.com/minecraft/mc-mods/stained-trees
-
-#Yes ik the code is bad, not my problem...
