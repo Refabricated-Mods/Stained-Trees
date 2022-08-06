@@ -1,5 +1,6 @@
 package net.bumblesoftware.stainedtrees.block;
 
+import net.bumblesoftware.stainedtrees.world.feature.STConfiguredFeatures;
 import net.bumblesoftware.stainedtrees.world.feature.tree.*;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -67,21 +68,21 @@ public class StainedTreeBlocks {
     public static final Leaves RED_LEAVES = new Leaves(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.GRASS));
     public static final Leaves WHITE_LEAVES = new Leaves(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.GRASS));
     public static final Leaves YELLOW_LEAVES = new Leaves(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.GRASS));
-    public static final Sapling BLACK_SAPLING = new Sapling(new BlackSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling BLUE_SAPLING = new Sapling(new BlueSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling BROWN_SAPLING = new Sapling(new BrownSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling CYAN_SAPLING = new Sapling(new CyanSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling GRAY_SAPLING = new Sapling(new GraySaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling LIGHT_BLUE_SAPLING = new Sapling(new LightBlueSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling LIGHT_GRAY_SAPLING = new Sapling(new LightGraySaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling LIME_SAPLING = new Sapling(new LimeSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling MAGENTA_SAPLING = new Sapling(new MagentaSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling ORANGE_SAPLING = new Sapling(new OrangeSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling PINK_SAPLING = new Sapling(new PinkSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling PURPLE_SAPLING = new Sapling(new PurpleSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling RED_SAPLING = new Sapling(new RedSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling WHITE_SAPLING = new Sapling(new WhiteSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Sapling YELLOW_SAPLING = new Sapling(new YellowSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling BLACK_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BLACK_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling BLUE_SAPLING =  new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BLUE_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling BROWN_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BROWN_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling CYAN_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.CYAN_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling GRAY_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.GRAY_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling LIGHT_BLUE_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIGHT_BLUE_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling LIGHT_GRAY_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIGHT_GRAY_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling LIME_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIME_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling MAGENTA_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.MAGENTA_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling ORANGE_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.ORANGE_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling PINK_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.PINK_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling PURPLE_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.PURPLE_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling RED_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.RED_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling WHITE_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.WHITE_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
+    public static final Sapling YELLOW_SAPLING = new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.YELLOW_TREE), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING));
     //Register
     public static void RegisterBlocks() {
         //Leaves
