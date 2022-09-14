@@ -1,12 +1,12 @@
 package net.bumblesoftware.stainedtrees.world.feature.tree;
 
+import com.google.common.base.Supplier;
 import net.minecraft.block.sapling.SaplingGenerator;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Random;
-import java.util.function.Supplier;
 
 public class STSaplingGenerator extends SaplingGenerator {
     private final  Supplier<RegistryEntry<? extends ConfiguredFeature<?, ?>>> colour;
