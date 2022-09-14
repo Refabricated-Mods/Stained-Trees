@@ -16,6 +16,7 @@ public class StainedTreesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.LIGHT_BLUE_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.LIGHT_GRAY_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.LIME_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.MAGENTA_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.ORANGE_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.PINK_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(StainedTreeBlocks.PURPLE_LEAVES, RenderLayer.getCutout());
