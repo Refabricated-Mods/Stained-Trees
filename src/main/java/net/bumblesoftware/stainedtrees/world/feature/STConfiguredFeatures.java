@@ -38,7 +38,7 @@ public class STConfiguredFeatures {
 
     public static final RegistryEntry<PlacedFeature> BLUE_OAK_CHECKED =
             net.minecraft.world.gen.feature.PlacedFeatures.register("blue_oak_checked", BLUE_TREE,
-                    PlacedFeatures.wouldSurvive(StainedTreeBlocks.BLACK_SAPLING));
+                    PlacedFeatures.wouldSurvive(StainedTreeBlocks.BLUE_SAPLING));
 
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> BLUE_OAK_SPAWN =
             net.minecraft.world.gen.feature.ConfiguredFeatures.register("blue_oak_spawn", Feature.RANDOM_SELECTOR,
